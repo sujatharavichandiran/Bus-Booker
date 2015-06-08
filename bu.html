@@ -1,0 +1,41 @@
+	<html>
+<head>
+</head>
+<body>	
+	<div class="clearfix topPart">	
+	<section id="Search" class="LB XXCN  P20">
+		<h1 class="bookTic XCN TextSemiBold" >Online Bus Tickets Booking with Zero Booking Fees</h1>
+		<div class="searchRow clearfix">
+			<div class="LB">
+				<label class="inputLabel">From</label>
+				<input id="txtSource" autocomplete="off" class="XXinput" placeholder="Enter a city" type="text" tabindex="1" data-validate = "required|validSource" data-message="Please enter a source city|Invalid City"/>
+				<div class="errorMessageFixed"> </div>
+			</div>
+			<span class="switchButton" id="switchButton"></span>
+			<div class="searchRight NoPaddingRight">
+				<label class="inputLabel">To</label>
+				<input id="txtDestination" autocomplete="off" class="XXinput" placeholder="Enter a city" type="text" tabindex="2" data-validate = "required|validDestination" data-message="Please enter a destination city|Invalid City"/>
+				<div class="errorMessageFixed"> </div>               
+			</div>
+		</div>
+		<div class="searchRow clearfix">
+			<div class="LB">
+				<label class="inputLabel">Date of Journey</label>
+				<span class="blackTextSmall"></span>
+				<input id="txtOnwardCalendar" class="XXinput calendar" placeholder="dd-mmm-yyyy" type="text" title="Date in the format dd-mmm-yyyy" tabindex="3" readonly="readonly"/>
+			</div>               
+			<div class="searchRight retJouney">
+				<label class="inputLabel">Date of Return<span class="opt">&nbsp;(Optional)</span></label>
+				<input id="txtReturnCalendar" class="XXinput calendar" placeholder="dd-mmm-yyyy" type="text" title="Date in the format dd-mmm-yyyy" tabindex="4" readonly="readonly"/>
+			</div>    
+		</div> 
+
+		<div class="dateError">Onward date should be before return date</div>
+		<div class="buttonContainer">
+			<button class="RB Xbutton" id="searchBtn" tabindex="6">Search Buses</button>
+		</div>
+	</section>
+	</div>
+	</body>
+	</html>
+    
